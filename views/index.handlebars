@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>GroupHub</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/index.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+
+	<div id="page_container">
+		<h1 style="text-align:center">Welcome to GroupHub</h1>
+
+		<div class="log_sign">
+			<div id="log_in">
+				<button id="show_log">log in</button>
+			</div>
+			<div id="sep_1">
+				<label> | </label>
+			</div>
+			<div id="sign_up">
+				<button id="show_sign">sign up</button>
+			</div>
+		</div>
+
+		<div class="container" id="hide_me_log">
+			<hr>
+			<form method="POST" action="" id="logBtn">
+				<input type="text" id="log_username" placeholder="username">
+				<input type="text" id="log_password" placeholder="password">
+				<input type="submit" id="submitBtn logdata" class="btn btn-default" value="Enter">
+			</form>
+			
+		</div>
+
+		<div class="container hide" id="hide_me_sign">
+			<hr>
+			<form method="POST" action="" id="signBtn">
+				<input type="text" id="sign_name" placeholder="preferred name">
+				<input type="submit" id="submitBtn signdata" class="btn btn-default" value="Submit">
+			</form>
+			
+		</div>
+
+	<!-- end of page_container -->	
+	</div>
+
+</body>
+<script src="js/index.js"></script>
+</html>

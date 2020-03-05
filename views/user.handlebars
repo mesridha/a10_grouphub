@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>{{name}} Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/index.css" rel="stylesheet" type="text/css">
+        <link href="/css/introHCI.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+
+        <div id="page_container">
+            <div style="text-align:right">
+                <input type="submit" id="submitBtn" class="btn btn-default" onclick="window.location.href = '/';" value="Log Out"></input>
+                <input type="submit" id="submitBtn" class="btn btn-default" onclick="window.location.href = '../help';" value="Help"></input>
+            </div>
+            <div class="jumbotron" style="text-align:center">
+                <h1>My Groups</h1>
+            </div>
+
+            <div class="container" id="red_box">
+            </div>
+
+            <div class="teams">
+                <!-- 
+                    jQuery will add any group data from log_me_in and new_member
+                    Added as a div class and click listener to route to group page
+                    -->
+            </div>
+        </div>
+
+    </body>
+    <script src="../js/users.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Group Creation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/index.css" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="/js/creation.js"></script>
+
+        <style>
+            .hide {
+                display:none;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="page_container">
+            <h1 style="text-align: center">Create Team</h1>
+            <br><h2 style="text-align: center">or Join</h2>
+
+            <div id="user_info">
+                <form id="name_invites">
+                    <input type="text" id="username" placeholder="username">
+                    <input type="text" id="password" placeholder="password">
+                    <hr>
+
+                    <input type="submit" id="submitBtn" class="btn btn-default"
+                        value="Next">
+			    </form>
+            </div>
+
+            <div class="hide" id="trait_input">
+
+                <div id="p_site">
+                    <a href="https://openpsychometrics.org/tests/OEJTS/">Take your personality test here!</a>
+                </div>
+
+                <form id="lc">
+                    <input type="text" id="1_letter" placeholder="I">
+                    <input type="text" id="2_letter" placeholder="N">
+                    <input type="text" id="3_letter" placeholder="T">
+                    <input type="text" id="4_letter" placeholder="J">
+                    <hr>
+                    <input type="submit" id="submitBtn lc_4" class="btn btn-default"
+                        value="Continue">
+			    </form>
+                
+            </div>
+
+        </div>
+
+    </body>
+</html>

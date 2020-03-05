@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Personality Type</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/index.css" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+
+        <div class="page_container">
+            <h1 style="text-align: center">Personality Type</h1>
+
+            <div id="p_site">
+                <a href="https://openpsychometrics.org/tests/OEJTS/">Take your personality test here!</a>
+            </div>
+
+            <div id="create_form">
+                <form id="name_invites">
+                    <input type="text" id="1_letter" placeholder="I">
+                    <input type="text" id="2_letter" placeholder="N">
+                    <input type="text" id="3_letter" placeholder="T">
+                    <input type="text" id="4_letter" placeholder="J">
+                    <hr>
+
+                    <input type="submit" id="sumitBtn lc_4" class="btn btn-default"
+                      onclick="window.location.href='/user';" value="Continue">
+			    </form>
+          <input type="submit" id="sumitBtn home" class="btn btn-default"
+          onclick="window.location.href='/user';" value="Home">
+            </div>
+        </div>
+
+    </body>
+    <script src="../js/personality.js"></script>
+</html>

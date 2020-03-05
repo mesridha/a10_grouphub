@@ -1,0 +1,225 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
+	color: #CC00AA;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.project a {
+     text-align: center;
+}
+
+.personality{
+  position: absolute;
+  background: none;
+}
+
+.personality:after{
+  position: absolute;
+  left: 10.13%;
+  right: 8.53%;
+  top: 24.44%;
+  bottom: 71.81%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  padding: 10px;
+}
+
+.personality p {
+  color: #0A47A2;  
+}
+
+.body{
+     position: fixed;
+     overflow-y: scroll
+     width: 100%
+     top: -20px;
+     right: -40px;
+     bottom: -40px;
+     width: auto;
+     height: auto;
+     background-image: url("../images/lorempixel.abstract.1.jpeg");
+     background-size: cover;
+     -webkit-filter: blur(0px);
+
+}
+
+.login{
+
+     position: absolute;
+     top: calc (50% - 75px);
+     left: calc (50% - 50px);
+     height: 150px;
+     width: 350px;
+     padding: 10px;
+}
+
+.login input [type=text]{
+     width: 250px;
+     height: 30px;
+     background: transparent;
+     border: 1px solid rgba(0,0,0,0.6);
+     border-radius: 2px;
+     color: #91089A;
+     padding: 4px;
+}
+
+.login input [type=password]{
+     width: 250px;
+     height: 30px;
+     background: transparent;
+     border: 1px solid #0A47A2;
+     border-radius: 2px;
+     color: #91089A;
+     padding: 4px;
+}
+
+.login input [type=button]{
+     width: 260px;
+     height: 30px;
+     background: #0A47A2;
+     border: 1px solid #0A47A2;
+     cursor: pointer;
+     border-radius: 2px;
+     color: #91089A;
+     padding: 6px;
+     margin-top: 10px;
+
+}
+
+.login input [type=button]:hover{
+     opacity: 0.8;
+}
+
+.login input [type=button]:active{
+     opacity: 0.6;
+}
+
+.login input [type=text]:focus{
+     outline: none;
+     border: 1px solid #0A47A2;
+}
+
+.login input [type=password]:focus{
+     outline: none;
+     border: 1px solid #0A47A2;
+}
+
+.login input [type=button]:focus{
+     outline: none;
+}
+
+::-webkit-input-placeholder{
+     color: #91089A;
+}
+
+::-moz-input-placeholder{
+     color: #91089A;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+
+.traits {
+  position: relative;
+  background-color: #FFC;
+  padding: 2rem;
+  text-align: center;
+  max-width: 200px;
+	color: black;
+}
+
+.traits::before {
+  content: "";
+
+  position : absolute;
+  z-index  : -1;
+  bottom   : 15px;
+  right    : 5px;
+  width    : 50%;
+  top      : 80%;
+  max-width: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item-roles {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+}
