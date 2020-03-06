@@ -12,30 +12,30 @@ $(document).ready(function() {
 function initializePage() {
 }
 
-function readJSONData() {
-	$('.edits').each(function( ) {
+// function readJSONData() {
+// 	$('.edits').each(function( ) {
 
-        var trait_editing = $(this);
-        var trait = trait_editing[0].attributes['id'].textContent;
-        var trait = trait.split("_");
+//         var trait_editing = $(this);
+//         var trait = trait_editing[0].attributes['id'].textContent;
+//         var trait = trait.split("_");
 
-		//console.log(trait_editing[0]);
-		var split = trait.values();
-		var trait = split.next()['value'];
-        var name = split.next()['value'];
+// 		//console.log(trait_editing[0]);
+// 		var split = trait.values();
+// 		var trait = split.next()['value'];
+//         var name = split.next()['value'];
 
-		//concat () with trait
-		$("a[id='trait_id']").text(trait);
-		//makeUpdates(trait[0], trait[1]);
+// 		//concat () with trait
+// 		$("a[id='trait_id']").text(trait);
+// 		//makeUpdates(trait[0], trait[1]);
 
-		var track = new Object();
-		track.name = name;
-		track.trait = trait;
-		var tracked = JSON.stringify(track);
-		console.log(tracked);
+// 		var track = new Object();
+// 		track.name = name;
+// 		track.trait = trait;
+// 		var tracked = JSON.stringify(track);
+// 		console.log(tracked);
 
-	});
-}
+// 	});
+// }
 
 /**
  * load localstr 'user' THEN 'friends' | div = personality type

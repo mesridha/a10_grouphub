@@ -16,7 +16,6 @@ var edit = require('./routes/edit');
 var creation = require('./routes/creation');
 var help = require('./routes/help');
 var sel = require('./routes/sel');
-var type = require('./routes/type');
 var browse = require('./routes/browse');
 // my route location variables
 
@@ -51,7 +50,6 @@ app.get('/help', help.view);
 app.get('/user/:user/project/:teams', team.view);
 app.get('/user/:user/sel/pageA', sel.view); //A B testing [default]
 app.get('/user/:user/sel/pageB', sel.viewAlt); //A B tesing
-app.get('/type', type.view);
 app.get('/browse', browse.view);
 app.get('/user', user.view);
 // my page routes

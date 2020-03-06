@@ -10,7 +10,7 @@ $(document).ready(function() {
  *
  */
 
-/* givem a user, returns the deleted traits and not-deleted traits of that user.
+/* given a user, returns the deleted traits and not-deleted traits of that user.
  * not-deleted traits = all possible traits of the user's personality 
  *	  				MINUS 
  *					the traits user deleted 

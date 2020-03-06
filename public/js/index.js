@@ -3,9 +3,9 @@
 //Ready initialize
 $(document).ready(function() {
     initializePage();
+    addData();
     login();
     signup();
-    addData();
 })
 
 /*
@@ -179,6 +179,8 @@ function signup() {
 /**
  * called to add the personality types to localstr 'intro' and 'extro'
  * needed for help, personality test, and team/edits page
+ * 
+ * on initializePage
  */
 function addData() {
     // --- intro ---

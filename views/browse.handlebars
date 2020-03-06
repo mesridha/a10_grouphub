@@ -11,13 +11,15 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script src="/js/browse.js"></script>
 
         <script>
             function finishSignUp() {
-                var name = JSON.parse(localStorage.getItem('current'));
-                console.log(name);
-                window.location.href = "/user";
+                var name = JSON.parse(localStorage.getItem('add_index'));
+                //console.log(name);
+                clearSignUp();
+                var name2 = JSON.parse(localStorage.getItem('new_member'));
+                console.log(name2);
+                window.location.href = "/user/" +name2[0];
             }
         </script>
 
@@ -25,18 +27,16 @@
     <body>
         
         <div id="page_container">
-            <div class="suggested">
-                <h3>Suggested Teams</h3>
-                <div>these groups need a ___</div>
-            </div>
 
             <div class="browse">
                 <h3>Browse Teams</h3>
             </div>
 
-            <!-- data uploaded from 'current' and type page inputs
-                'current' in div class=user
-                'some descriptive data'
+            <!-- data uploaded from 'add_index' and psuedo classes added
+                in div class=browse
+                
+                give list of pre-defined classes for the user page to 
+                generate friends list for. Require minimum of one input
                 -->
                     
                 <input type="submit" id="submitBtn done" class="btn btn-default" 
@@ -44,4 +44,11 @@
         </div>
 
     </body>
+    <!-- allow the body to load with teams div and content
+
+        calls initializePage to listen for clicks and append
+        to the user in localstr 'add_index'
+        -->
+    <script src="/js/browse.js"></script>
+
 </html>

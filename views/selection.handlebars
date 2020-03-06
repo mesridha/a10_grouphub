@@ -14,8 +14,8 @@
         <script src="/js/selection.js"></script>
 
         <script>
-            function goTrait() {
-                window.location.href = "/type";
+            function goBrowse() {
+                window.location.href = "/browse";
             }
         </script>
 
@@ -24,20 +24,24 @@
         
         <div id="page_container">
             <div class="user">
+                <!-- data uploaded from 'current'
+                'current' in div class=trait
+
+                user's traits are selectable
+                -->
             </div>
 
             <!-- selection.js must append the proper trait divs from 'current'
                 -->
 
-                <div id="trait">trait one</div>
-                <div id="trait">trait two</div>
-                <div id="trait">trait three</div>
-                <div id="trait">trait four</div>
-                <div id="trait">trait five</div>
-                <div id="trait">trait six</div>
+            <!-- data uploaded from 'current'
+                'current' in div class=roles
+
+                user's roles are selectable only to ONE
+                -->
                     
                 <input type="submit" id="submitBtn done" class="btn btn-default" 
-			        onclick="goTrait();" value="Next">
+			        onclick="goBrowse();" value="Next">
         </div>
 
     </body>

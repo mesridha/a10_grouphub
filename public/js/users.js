@@ -25,15 +25,40 @@ function initializePage() {
 
 	/**
 	* routed by sign up-creation page
-	* looking in 'new_user' localstr
+	* looking in 'new_member' localstr
 	* if whoToAdd then change href
 	*/
 	var whoToAdd = localStorage.getItem('new_member');
 	if (whoToAdd) {
-		var name = JSON.parse(whoToAdd);
-		//console.log(name);
+		var user = JSON.parse(whoToAdd);
+		var name = user[0];
+		console.log(user);
 
-		console.log(name);
+		var addThese = [];
+		var whereToGo = [];
+
+		for (var r=0; r<user[1].length; r++) {
+			//add div class w/ append html
+			var html_add = "<div " + "id='" +user[1][r] +"' " +"style='text-align: center'" +">" 
+				+user[1][r] +"</div>";
+
+			whereToGo.push("/" +name +"/project/" +user[1][r]);
+			addThese.push(html_add);
+		}
+
+		for (var b=0; b<addThese.length; b++) {
+			$('.teams').append(addThese[b]);
+		}
+
+		console.log(addThese);
+		console.log(whereToGo);
+
+		//update data localstr 'current'
+		var member = localStorage.getItem('new_member');
+		console.log(member);
+		localStorage.setItem('current', member);
+
+		console.log(JSON.parse(localStorage.getItem('current'))[0]);
 				
 	} else {
 		/**
@@ -42,7 +67,6 @@ function initializePage() {
 		*/
 		var loadMe = localStorage.getItem('log_me_in');
 		var user = JSON.parse(loadMe);
-		//console.log(user);
 
 		var addThese = [];
 		var whereToGo = [];
@@ -131,8 +155,9 @@ function addFriends() {
 	
 	var groups = localStorage.getItem('current');
 	var groups = JSON.parse(groups);
+	console.log(groups);
 	var groups = groups[1];
-	//console.log(groups);
+	console.log(groups);
 	for (var h=0; h<groups.length; h++) {
 		var howmany = getHowMany(1, 3);
 		var where = h;
