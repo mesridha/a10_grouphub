@@ -13,6 +13,7 @@ $(document).ready(function() {
      //called in the initializePage function
      var type;
      var allTraits;
+     var allRoles;
      var personality;
      var deletedTraits = [];
      if (user.length > 3) {
@@ -85,7 +86,18 @@ function initializePage() {
                             font-weight: bold;\
                             font-size: 16px;\
                             line-height: 22px;\
-                            color: #000000;'>Traits</h4>";
+                            color: #000000;'>Traits</h4>\
+                            <h4 style='position: absolute;\
+                            left:67%;\
+                            right: 58.4%;\
+                            top: 49.33%;\
+                            bottom: 55.92%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: bold;\
+                            font-size: 16px;\
+                            line-height: 22px;\
+                            color: #000000;'>Roles</h4>";
                         // for (var i in userTeams) {
                         //     htmlUser += "<h6>" +userTeams[i] + "<br></h6>";
                         // }
