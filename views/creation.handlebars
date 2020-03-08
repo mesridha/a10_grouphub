@@ -121,20 +121,19 @@
                     line-height: 28px;
 
                     color: #000000;">Step 1: Take a quick personality test </h5>
-                    <a href="https://www.16personalities.com/free-personality-test" style="position: absolute;
-                     left: 35.13%;
-                     right: 8.53%;
-                     top: 48.44%;
-                     bottom: 71.81%;
-
-                     font-family: Roboto;
-                     font-style: normal;
-                     font-weight: normal;
-                     font-size: 20px;
-                     line-height: 28px;
-                     text-decoration-line: underline;
-
-                     color: #0A47A2;">Click On Me!</a>
+                    <button id="OpenTest" onclick="OpenTest()" style="position: absolute;
+                      width: 86px;
+                      height: 35px;
+                      left: 130px;
+                      top: 300px;
+                      background: #BADFFF;
+                      border: 1px solid #0A47A2;
+                      box-sizing: border-box;">Take Test!</button>
+                     <script>
+                      function OpenTest(){
+                        window.open("https://www.16personalities.com/free-personality-test", "_blank");
+                      };
+                    </script>
                 </div>
 
                 <form id="lc">
