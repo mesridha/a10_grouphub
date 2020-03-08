@@ -77,8 +77,8 @@ function initializePage() {
                     +userName +"</h2> \
                         <div class='traits'><h4\
                         style='position: absolute;\
-                            left: 20%;\
-                            right: 58.4%;\
+                            left: 13%;\
+                            right: 18.4%;\
                             top: 49.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
@@ -86,18 +86,18 @@ function initializePage() {
                             font-weight: bold;\
                             font-size: 16px;\
                             line-height: 22px;\
-                            color: #000000;'>Traits</h4>\
+                            color: #000000;'>Deselect Traits</h4>\
                             <h4 style='position: absolute;\
-                            left:67%;\
-                            right: 58.4%;\
+                            left: 64%;\
+                            right: 1.4%;\
                             top: 49.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: bold;\
-                            font-size: 16px;\
+                            font-size: 14px;\
                             line-height: 22px;\
-                            color: #000000;'>Roles</h4>";
+                            color: #000000;'>Select Role</h4>";
                         // for (var i in userTeams) {
                         //     htmlUser += "<h6>" +userTeams[i] + "<br></h6>";
                         // }
