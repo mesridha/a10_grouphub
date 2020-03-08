@@ -5,6 +5,7 @@ $(document).ready(function() {
 	initializePage();
 });
 var inc = 33.39;
+var role_inc = 37.39;
 /*
  * Function called when document is ready
  *
@@ -87,6 +88,7 @@ function initializePage() {
 
 
 	addType();
+	addRole();
  }
 
 /* givem a user, returns the deleted traits and not-deleted traits of that user.
@@ -96,10 +98,15 @@ not-deleted traits = all possible traits of the user's personality
 function getTraits(user) {
 	var types;
 	var allTraits;
+	var allRoles;
 	var personality = user[2];
 	var deletedTraits = [];
+	var deletedRoles = [];
 	if (user.length > 3) {
 		deletedTraits = user[3];
+	}
+	if (user.length > 4) {
+		deletedRoles = user[4];
 	}
 
 	// first get ALL the possible traits related to that personality
@@ -112,11 +119,13 @@ function getTraits(user) {
 	for (var i = 0; i < types.length; i++) {
 		if (types[i]["type"] == personality) {
 			allTraits = types[i]["attributes"];
+			allRoles = types[i]["roles"];
 		}
 	}
 
 	var notdeletedTraits = allTraits.filter(x => !deletedTraits.includes(x));
-	return [deletedTraits, notdeletedTraits];
+	var notdeletedRoles = allRoles.filter(x => !deletedRoles.includes(x));	
+	return [deletedTraits, notdeletedTraits, deletedRoles, notdeletedRoles];
 }
 
 
@@ -142,7 +151,7 @@ function getTraits(user) {
 			if (type[i]["type"] == id) {
 				// current user, so should only display not-deleted traits
 				if (name == user[0]) {
-					var [_, traits] = getTraits(user);
+					var [_, traits, _, roles] = getTraits(user);
 				} else {
 					var traits = type[i]["attributes"];
 				}
@@ -165,6 +174,57 @@ function getTraits(user) {
 				htmlTraits += "</div>";
 				$(this).append(htmlTraits);
 				inc = inc + 3;
+			}
+		}
+
+ 	});
+}
+
+ function addRole() {
+	var intro = (JSON.parse(localStorage.getItem('intro')))["introverted"];
+	var extro = (JSON.parse(localStorage.getItem('extro')))["extroverted"];
+	var user = JSON.parse(localStorage.getItem('current'));
+
+	$('.users').each(function() {
+		//find this id for personality type
+		var name = $(this).attr("id");
+		var id = ($(this).find(".types")).attr("id");
+		var type;
+
+		if (id.charAt(0) == 'I') {
+			type = intro;
+		} else {
+			type = extro;
+		}
+
+		for (var i = 0; i < type.length; i++) {
+			if (type[i]["type"] == id) {
+				// current user, so should only display not-deleted traits
+				if (name == user[0]) {
+					var [_, traits, _, roles] = getTraits(user);
+				} else {
+					var roles = type[i]["roles"];
+				}
+				// gather all the traits of this personality
+				var htmlRoles = "<div class='traits'>";
+				for (var j in roles) {
+					htmlRoles += "<h6\
+					style='position: absolute;\
+                           left: 74.13%;\
+                            right: 4.53%;\
+                            top: "+ role_inc + "%;\
+                            bottom: 75.86%;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 10px;\
+                            line-height: 21px;\
+                            color: #1C2472;'>" + roles[j] + "<br>" + "</h6>" ;
+                    role_inc = role_inc + 3;
+				}
+				htmlRoles += "</div>";
+				console.log($(this));
+				$(this).append(htmlRoles);
+				role_inc = role_inc + 7;
 			}
 		}
 

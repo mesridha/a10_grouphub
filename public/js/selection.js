@@ -16,8 +16,12 @@ $(document).ready(function() {
      var allRoles;
      var personality;
      var deletedTraits = [];
+     var deletedRoles = [];
      if (user.length > 3) {
          deletedTraits = user[3];
+     }
+     if (user.length > 4){
+         deletedRoles = user[4];        
      }
 
      //add psuedo for wrong data
@@ -41,11 +45,13 @@ $(document).ready(function() {
      for (var i=0; i<type.length; i++) {
          if (type[i]["type"] == personality) {
              allTraits = type[i]["attributes"];
+             allRoles = type[i]["roles"];
          }
      }
 
      var notdeletedTraits = allTraits.filter(x => !deletedTraits.includes(x));
-     return [deletedTraits, notdeletedTraits];
+     var notdeletedRoles = allRoles.filter(x => !deletedRoles.includes(x));
+     return [deletedTraits, notdeletedTraits, deletedRoles, notdeletedRoles];
  }
 
  /**
@@ -57,9 +63,9 @@ function initializePage() {
     console.log(user);
     var userName = user[0];
     var userPersonality = user[2];
-    var [deletedTraits, notdeletedTraits] = getTraits(user);
+    var [deletedTraits, notdeletedTraits, deletedRoles, notdeletedRoles] = getTraits(user);
     var increment = 330;
-    console.log([deletedTraits, notdeletedTraits]);
+    console.log([deletedTraits, notdeletedTraits, deletedRoles, notdeletedRoles]);
 
     //add the html for traits and roles selection
     var htmlUser = "<div class='users'><h2\
@@ -86,7 +92,7 @@ function initializePage() {
                             font-weight: bold;\
                             font-size: 16px;\
                             line-height: 22px;\
-                            color: #000000;'>Deselect Traits</h4>\
+                            color: #000000;'>Delete Traits</h4>\
                             <h4 style='position: absolute;\
                             left: 64%;\
                             right: 1.4%;\
@@ -97,7 +103,7 @@ function initializePage() {
                             font-weight: bold;\
                             font-size: 14px;\
                             line-height: 22px;\
-                            color: #000000;'>Select Role</h4>";
+                            color: #000000;'>Delete Roles</h4>";
                         // for (var i in userTeams) {
                         //     htmlUser += "<h6>" +userTeams[i] + "<br></h6>";
                         // }
@@ -131,8 +137,47 @@ function initializePage() {
                             increment = increment + 40;
                         }   
                         for (var i in deletedTraits) {
-                            htmlUser += "<h6 style='font-weight:normal' id='" + deletedTraits[i] + "' onclick=editTrait()>" + deletedTraits[i] + "</h6>";
+                            htmlUser += "<h6 style='position: absolute;\
+                                                    padding-top:10px;\
+                                                    padding-left:10px;\
+                                                    width:100px;\
+                                                    height: 30px;\
+                                                    left: 60px;\
+                                                    font-weight:normal;\
+                                                    top: " + increment + "px;\
+                                                    background: #D4F5E9;\
+                                                    border: 1px solid #0A47A2;\
+                                                    box-sizing: border-box;' \ id='" + deletedTraits[i] + "' onclick=editTrait()>" + deletedTraits[i] + "</h6>";
                         }
+                        var top_inc = 330;
+                        for (var i in notdeletedRoles) {
+                            htmlUser += "<h6 style='position: absolute;\
+                                                    padding-top:10px;\
+                                                    padding-left:10px;\
+                                                    width:100px;\
+                                                    height: 40px;\
+                                                    left: 250px;\
+                                                    font-weight:bold;\
+                                                    top: " + top_inc + "px;\
+                                                    background: #50A8B4;\
+                                                    border: 1px solid #0A47A2;\
+                                                    box-sizing: border-box;' \
+                                                    id='" + notdeletedRoles[i] + "' onclick=editRole()>" + notdeletedRoles[i] + "</h6>";
+                            top_inc = top_inc + 50;
+                        }   
+                        for (var i in deletedRoles) {
+                            htmlUser += "<h6 style='position: absolute;\
+                                                    padding-top:10px;\
+                                                    padding-left:10px;\
+                                                    width:100px;\
+                                                    height: 40px;\
+                                                    left: 250px;\
+                                                    font-weight:normal;\
+                                                    top: " + top_inc + "px;\
+                                                    background: #D4F5E9;\
+                                                    border: 1px solid #0A47A2;\
+                                                    box-sizing: border-box;'\ id='" + deletedRoles[i] + "' onclick=editRole()>" + deletedRoles[i] + "</h6>";
+                        }                        
     htmlUser += "</div>"; //close type div
     htmlUser += "</div>"; //close users div
 
@@ -160,6 +205,7 @@ function editTrait() {
 		}
 		alert("You have DELETED trait " + traitToEdit);
 		event.srcElement.style.fontWeight='normal';
+        event.srcElement.style.background='#D4F5E9';                
 	} 
 	// trait needs to be added back
 	else {
@@ -172,7 +218,43 @@ function editTrait() {
 		}
 		alert("You have ADDED trait " + traitToEdit);
 		event.srcElement.style.fontWeight='bold';
+        event.srcElement.style.background='#50A8B4';                
 	}
 	localStorage.setItem('add_index', JSON.stringify(user));
 	console.log(localStorage.getItem('add_index'));
+}
+
+function editRole() {
+    var roleToEdit = event.srcElement.id;
+    var user = JSON.parse(localStorage.getItem('add_index'));
+
+    // trait needs to be deleted
+    if (event.srcElement.style.fontWeight == 'bold') {
+        // check if there had been any deleted traits
+        if (user.length <= 4) {
+            user.push([roleToEdit]);
+        } else {
+            console.log(user);
+            user[4].push(roleToEdit);
+        }
+        alert("You have DELETED role " + roleToEdit);
+        event.srcElement.style.fontWeight='normal';
+        event.srcElement.style.background='#D4F5E9';        
+
+    } 
+    // trait needs to be added back
+    else {
+        if (user.length > 4) {
+            for (var i in user[4]) {
+                if (user[4][i] == roleToEdit) {
+                    (user[4]).splice(i, 1);
+                }
+            }
+        }
+        alert("You have ADDED role " + roleToEdit);
+        event.srcElement.style.fontWeight='bold';
+        event.srcElement.style.background='#50A8B4';                
+    }
+    localStorage.setItem('add_index', JSON.stringify(user));
+    console.log(localStorage.getItem('add_index'));
 }

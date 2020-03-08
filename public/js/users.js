@@ -48,7 +48,8 @@ function initializePage() {
 								      top:" + increment+ "px;\
 								      padding-top:10px;\
                                       padding-left:8px;\
-								      background: #D4F5E9;\
+								      background: #50A8B4;\
+								      font-weight: bold;\
 								      border: 1px solid #707070;\
 								      box-sizing: border-box;\
 								      text-align:center;'" 
@@ -172,7 +173,7 @@ function addFriends() {
 	var groups = groups[1];
 	console.log(groups);
 	for (var h=0; h<groups.length; h++) {
-		var howmany = getHowMany(1, 3);
+		var howmany = getHowMany(1, 2);
 		var where = h;
 		var teamnumbers = createOthers(howmany, where);
 		othersToAdd.push(teamnumbers);

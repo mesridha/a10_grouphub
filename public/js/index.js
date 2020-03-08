@@ -210,7 +210,7 @@ function addData() {
             "roles":[
                "Logistician",
                "Programmer",
-               "Project Planner",
+               "Organizer",
                "Data Analyst"
             ]
           },
@@ -228,7 +228,7 @@ function addData() {
                "Analyst",
                "Liaison",
                "Brainstormer",
-               "Group Coordinator"
+               "Coordinator"
             ]            
           },
           {
@@ -242,9 +242,9 @@ function addData() {
               "Gentle"
             ],
             "roles":[
-               "Ethical Specialist",
-               "Protest Organizer",
-               "Rescue Effort",
+               "Ethics Expert",
+               "Organizer",
+               "Rescue Leader",
                "Social Worker"
             ]             
           },
@@ -476,7 +476,7 @@ function addData() {
                "Leader",
                "Businessperson",
                "Chief Officer",
-               "Business Executive"
+               "Executive"
             ] 
           }
         ]

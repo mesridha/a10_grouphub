@@ -13,7 +13,7 @@
             "roles":[
                "Logistician",
                "Programmer",
-               "Project Planner",
+               "Planner",
                "Data Analyst"
             ]
          },
@@ -31,7 +31,7 @@
                "Analyst",
                "Liaison",
                "Brainstormer",
-               "Group Coordinator"
+               "Coordinator"
             ]
          },
          {
@@ -47,7 +47,7 @@
             "roles":[
                "Ethical Specialist",
                "Protest Organizer",
-               "Rescue Effort",
+               "Rescue Leader",
                "Social Worker"
             ]            
          },

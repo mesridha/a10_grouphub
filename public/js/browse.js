@@ -45,43 +45,43 @@ function addDisplay() {
                 userTeams.push(htmlTeams);
     }*/
 
-    var htmlTeams1 = "<div class='teams' id='text' onclick='changeColor(id)' style='position:absolute;padding-top:10px;padding-left:10px;width:100px;height:36px;left: 70px;top: 310px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams1 = "<div class='teams' id='text' onclick='changeColor(id)' style='position:absolute;padding-top:10px;padding-left:10px;width:100px;height:36px;left: 70px;top: 310px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams1 = htmlTeams1 + team_list[0] + "</div>";
     userTeams.push(htmlTeams1);
 
-    var htmlTeams2 = "<div class='teams' id='text1' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 360px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams2 = "<div class='teams' id='text1' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 360px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams2 = htmlTeams2 + team_list[1] + "</div>";
     userTeams.push(htmlTeams2);
 
-    var htmlTeams3 = "<div class='teams' id='text2' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 410px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams3 = "<div class='teams' id='text2' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 410px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams3 = htmlTeams3 + team_list[2] + "</div>";
     userTeams.push(htmlTeams3);
 
-    var htmlTeams4 = "<div class='teams' id='text3' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 460px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams4 = "<div class='teams' id='text3' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 460px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams4 = htmlTeams4 + team_list[3] + "</div>";
     userTeams.push(htmlTeams4);
 
-    var htmlTeams5 = "<div class='teams' id='text4' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 510px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams5 = "<div class='teams' id='text4' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 70px;top: 510px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams5 = htmlTeams5 + team_list[4] + "</div>";
     userTeams.push(htmlTeams5);
 
-    var htmlTeams6 = "<div class='teams' id='text5' onclick='changeColor(id)' style='position:absolute;padding-top:10px;padding-left:10px;width:100px;height:36px;left: 230px;top: 310px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams6 = "<div class='teams' id='text5' onclick='changeColor(id)' style='position:absolute;padding-top:10px;padding-left:10px;width:100px;height:36px;left: 230px;top: 310px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams6 = htmlTeams6 + team_list[5] + "</div>";
     userTeams.push(htmlTeams6);
 
-    var htmlTeams7 = "<div class='teams' id='text6' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 360px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams7 = "<div class='teams' id='text6' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 360px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams7 = htmlTeams7 + team_list[6] + "</div>";
     userTeams.push(htmlTeams7);
 
-    var htmlTeams8 = "<div class='teams' id='text7' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 410px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams8 = "<div class='teams' id='text7' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 410px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams8 = htmlTeams8 + team_list[7] + "</div>";
     userTeams.push(htmlTeams8);
 
-    var htmlTeams9 = "<div class='teams' id='text8' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 460px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams9 = "<div class='teams' id='text8' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 460px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams9 = htmlTeams9 + team_list[8] + "</div>";
     userTeams.push(htmlTeams9);
 
-    var htmlTeams10 = "<div class='teams' id='text9' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 510px;background: #50A8B4;border: 1px solid #0A47A2;box-sizing: border-box;'>";
+    var htmlTeams10 = "<div class='teams' id='text9' onclick='changeColor(id)' style='position: absolute;padding-top:10px;padding-left:10px;width:100px;height: 36px;left: 230px;top: 510px;background: #D4F5E9;border: 1px solid #0A47A2;box-sizing: border-box; font-weight:normal;'>";
     htmlTeams10 = htmlTeams10 + team_list[9] + "</div>";
     userTeams.push(htmlTeams10);
 
@@ -91,7 +91,8 @@ function addDisplay() {
 }  
 
 function changeColor(id) {
-    document.getElementById(id).style.background = "#D4F5E9";
+    document.getElementById(id).style.background = "#50A8B4";
+    document.getElementById(id).style.fontWeight = "bold";    
     return true;
 }
 /**
