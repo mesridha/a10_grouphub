@@ -43,7 +43,6 @@ function login() {
     */
    $(function(){
       $("form#logBtn").on('click',function() {
-        $(this).hide();
         $("#hidden-div").show();
       }); 
    });    
@@ -151,6 +150,11 @@ function create10(nameI, teamI, pI) {
  *            turns into 'add_index' (see creation.js)
  */
 function signup() {
+   $(function(){
+      $("form#signBtn").on('click',function() {
+        $("#hidden-div").show();
+      }); 
+   });  
     // --- B2 ---
    $('form#signBtn').submit(function() {
 
@@ -161,7 +165,7 @@ function signup() {
         var newUser = new Object();
         newUser.name = name;
         console.log(name);
-
+        if (name != "") {
         localStorage.setItem('sign_me_up', JSON.stringify(newUser));
         /* test stored data */
         var me = localStorage.getItem('sign_me_up');
@@ -178,6 +182,7 @@ function signup() {
             var newURL = "/creation/"+name.name;
             window.location.href = newURL;
         });
+      }
     });
 }
 
