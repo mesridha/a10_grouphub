@@ -50,19 +50,102 @@ function initializePage() {
 	var userPersonality = user[2];
 	var [deletedTraits, notdeletedTraits] = getTraits(user);
 
-	var htmlUser = "<h1 style='text-align: center'>Profile Page</h1>";
-	htmlUser += "<div class='users'><h2>" + userName + "</h2> \
-						<div class='teams'><h4> Teams </h4>";
+	var htmlUser = "<img style='position: absolute;\
+                    width: 250px;\
+                    height: 200px;\
+                    left: 62px;\
+                    top: 5px;' \
+                src='../../../../images/logo.jpeg' ... /> \
+            <img style='position: absolute;\
+                            width: 340px;\
+                            height: 30px;\
+                            left: 25px;\
+                            top: 180px;' \
+                src='../../../../images/dots.jpeg' ... /> ";
+	htmlUser += "<div class='users'><h2\
+                     style='position: absolute;\
+                            left: 30%;\
+                            right: 58.4%;\
+                            top: 30.5%;\
+                            bottom: 55.92%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 18px;\
+                            line-height: 22px;\
+                            color: #000000;'>" + userName + "</h2> \
+						<div class='teams'><h4\
+                        style='position: absolute;\
+                            left: 20%;\
+                            right: 58.4%;\
+                            top: 45.33%;\
+                            bottom: 55.92%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: bold;\
+                            font-size: 16px;\
+                            line-height: 22px;\
+                            color: #000000;'> Teams </h4>";
+                        var inc = 310;
 						for (var i in userTeams) {
-							htmlUser += "<h6>" + userTeams[i] +"<br> </h6>";
+							htmlUser += "<h6 id='text3' \
+											onclick='changeColor(id)' \
+											style='position: absolute;\
+											padding-top:10px;\
+											padding-left:10px;\
+											width:100px;\
+											height: 36px;\
+											left: 60px;\
+											top: " + inc + "px;\
+											background: #50A8B4;\
+											border: 1px solid #0A47A2;\
+											box-sizing: border-box;\
+											font-weight: bold'>" 
+											+ userTeams[i] +"<br> </h6>";
+							inc = inc + 50;
 						}
 		htmlUser += "</div>"; // close teams div
-		htmlUser += "<div class='traits'><h4> Personality: " + userPersonality + "</h4>";
+		htmlUser += "<div class='traits'><h4\
+                     style='position: absolute;\
+                            left: 29.87%;\
+                            right: 26.13%;\
+                            top: 38.38%;\
+                            bottom: 51.87%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 20px;\
+                            line-height: 30px;\
+                            color: #000000;'> Personality: " + userPersonality + "</h4>" +
+                            "<h4 style='position: absolute;\
+                            left: 60.87%;\
+                            right: 26.13%;\
+                            top: 45.33%;\
+                            bottom: 51.87%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 20px;\
+                            line-height: 30px;\
+                            color: #000000;'> Traits </h4>";
+                            var increment = 310;
 						for (var i in notdeletedTraits) {
-							htmlUser += "<h6 style='font-weight:bold' id='" + notdeletedTraits[i] + "' onclick=editTrait()>" + notdeletedTraits[i] + "</h6>";
+							htmlUser += "<h6 style='position: absolute;\
+                                                    padding-top:10px;\
+                                                    padding-left:10px;\
+                                                    width:100px;\
+                                                    height: 30px;\
+                                                    left: 220px;\
+                                                    font-weight:bold;\
+                                                    top: " + increment + "px;\
+                                                    background: #50A8B4;\
+                                                    border: 1px solid #0A47A2;\
+                                                    box-sizing: border-box;' \
+                                                    id='" + notdeletedTraits[i] + "' onclick=editTrait()>" + notdeletedTraits[i] + "</h6>";
+                            increment = increment + 40;
 						}
 						for (var i in deletedTraits) {
-							htmlUser += "<h6 style='font-weight:normal' id='" + deletedTraits[i] + "' onclick=editTrait()>" + deletedTraits[i] + "</h6>";
+							htmlUser += "<h6 style='font-weight:normal; color:#FFFFFF' id='" + deletedTraits[i] + "' onclick=editTrait()>" + deletedTraits[i] + "</h6>";
 						}
 		htmlUser += "</div>"; // close traits div 
 		htmlUser += "</div>"; // close users div
@@ -71,6 +154,10 @@ function initializePage() {
 
 }
 
+function changeColor(id) {
+    document.getElementById(id).style.background = "#D4F5E9";
+    return true;
+}
 
 // user[3] keeps track of the deleted traits
 function editTrait() {

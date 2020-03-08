@@ -9,6 +9,12 @@
                "Reserved",
                "Realistic",
                "Systematic"
+            ],
+            "roles":[
+               "Logistician",
+               "Programmer",
+               "Project Planner",
+               "Data Analyst"
             ]
          },
          {
@@ -20,6 +26,12 @@
                "Responsible",
                "Pragmatic",
                "Thorough"
+            ],
+            "roles":[
+               "Analyst",
+               "Liaison",
+               "Brainstormer",
+               "Group Coordinator"
             ]
          },
          {
@@ -30,8 +42,14 @@
                "Insightful",
                "Dependable",
                "Compassionate",
-               "Gentle"
-            ]
+               "Moral"
+            ],
+            "roles":[
+               "Ethical Specialist",
+               "Protest Organizer",
+               "Rescue Effort",
+               "Social Worker"
+            ]            
          },
          {
             "type":"INTJ",
@@ -42,6 +60,12 @@
                "Logical",
                "Reserved",
                "Insightful"
+            ],
+            "roles":[
+               "Architect",
+               "Analyst",
+               "Strategist",
+               "Researcher"
             ]
          },
          {
@@ -53,18 +77,30 @@
                "Spontaneous",
                "Reserved",
                "Independent"
-            ]
+            ],
+            "roles":[
+               "Engineer",
+               "Designer",
+               "Constructor",
+               "Mechanic"
+            ]              
          },
          {
             "type":"ISFP",
             "attributes":[
-               "Gentle",
-               "Sensitive",
-               "Nurturing",
+               "Innovative",
+               "Introspective",
+               "Risk-taking",
                "Helpful",
                "Flexible",
                "Realistic"
-            ]
+            ],
+            "roles":[
+               "Adventurer",
+               "Artist",
+               "Philosopher",
+               "Celebrity"
+            ]             
          },
          {
             "type":"INFP",
@@ -75,7 +111,13 @@
                "Perceptive",
                "Caring",
                "Loyal"
-            ]
+            ],
+            "roles":[
+               "Mediator",
+               "Writer",
+               "Actor",
+               "Social Worker"
+            ]              
          },
          {
             "type":"INTP",
@@ -86,7 +128,13 @@
                "Reserved",
                "Flexible",
                "Imaginative"
-            ]
+            ],
+            "roles":[
+               "Inventor",
+               "Product Developer",
+               "Professor",
+               "Researcher"
+            ]            
          }
       ],
       "extroverted":[
@@ -99,7 +147,13 @@
                "Curious",
                "Versatile",
                "Spontaneous"
-            ]
+            ],
+            "roles":[
+               "Entrepreneur",
+               "Comedian",
+               "Inventor",
+               "Public Figure"
+            ]             
          },
          {
             "type":"ESFP",
@@ -110,7 +164,13 @@
                "Spontaneous",
                "Tactful",
                "Flexible"
-            ]
+            ],
+            "roles":[
+               "Entertainer",
+               "Actor",
+               "Dancer",
+               "Influencer"
+            ]             
          },
          {
             "type":"ENFP",
@@ -121,7 +181,13 @@
                "Optimistic",
                "Supportive",
                "Playful"
-            ]
+            ],
+            "roles":[
+               "Campaigner",
+               "Negotiator",
+               "Literary Analyst",
+               "Psychologist"
+            ]              
          },
          {
             "type":"ENTP",
@@ -132,7 +198,13 @@
                "Enterprising",
                "Inquisitive",
                "Versatile"
-            ]
+            ],
+            "roles":[
+               "Debater",
+               "Lawyer",
+               "Politician",
+               "Marketer"
+            ]            
          },
          {
             "type":"ESTJ",
@@ -143,6 +215,12 @@
                "Systematic",
                "Dependable",
                "Realistic"
+            ],
+            "roles":[
+               "Executive",
+               "Leader",
+               "Project Manager",
+               "Upholder of Law"
             ]
          },
          {
@@ -154,6 +232,12 @@
                "Conscientious",
                "Organized",
                "Practical"
+            ],
+            "roles":[
+               "Trend-setter",
+               "Social Outreach",
+               "Public Relations",
+               "Event Coordinator"
             ]
          },
          {
@@ -165,7 +249,13 @@
                "Organized",
                "Diplomatic",
                "Responsible"
-            ]
+            ],
+            "roles":[
+               "Politician",
+               "Coach",
+               "Teacher",
+               "Public Figure"
+            ]              
          },
          {
             "type":"ENTJ",
@@ -176,7 +266,13 @@
                "Outgoing",
                "Ambitious",
                "Independent"
-            ]
+            ],
+            "roles":[
+               "Leader",
+               "Businessperson",
+               "Chief Officer",
+               "Business Executive"
+            ]            
          }
       ]
    }

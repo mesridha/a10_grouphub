@@ -37,11 +37,16 @@ function initializePage() {
  * localstr: 'log_me_in' contains [.username, .password]
  */
 function login() {
-    
     //return false if not in local str 'current' _from signup page
     /* ----- B1 -----
     * Stores input form data into localstorage
     */
+   $(function(){
+      $("form#logBtn").on('click',function() {
+        $(this).hide();
+        $("#hidden-div").show();
+      }); 
+   });    
    $('form#logBtn').submit(function(e) {
         e.preventDefault();
 
@@ -196,6 +201,12 @@ function addData() {
               "Reserved",
               "Realistic",
               "Systematic"
+            ],
+            "roles":[
+               "Logistician",
+               "Programmer",
+               "Project Planner",
+               "Data Analyst"
             ]
           },
           {
@@ -207,7 +218,13 @@ function addData() {
               "Responsible",
               "Pragmatic",
               "Thorough"
-            ]
+            ],
+            "roles":[
+               "Analyst",
+               "Liaison",
+               "Brainstormer",
+               "Group Coordinator"
+            ]            
           },
           {
             "type": "INFJ",
@@ -218,7 +235,13 @@ function addData() {
               "Dependable",
               "Compassionate",
               "Gentle"
-            ]
+            ],
+            "roles":[
+               "Ethical Specialist",
+               "Protest Organizer",
+               "Rescue Effort",
+               "Social Worker"
+            ]             
           },
           {
             "type": "INTJ",
@@ -229,7 +252,13 @@ function addData() {
               "Logical",
               "Reserved",
               "Insightful"
-            ]
+            ],
+            "roles":[
+               "Architect",
+               "Analyst",
+               "Strategist",
+               "Researcher"
+            ]            
           },
           {
             "type": "ISTP",
@@ -240,7 +269,13 @@ function addData() {
               "Spontaneous",
               "Reserved",
               "Independent"
-            ]
+            ],
+            "roles":[
+               "Engineer",
+               "Designer",
+               "Constructor",
+               "Mechanic"
+            ]             
           },
           {
             "type": "ISFP",
@@ -251,7 +286,13 @@ function addData() {
               "Helpful",
               "Flexible",
               "Realistic"
-            ]
+            ],
+            "roles":[
+               "Adventurer",
+               "Artist",
+               "Philosopher",
+               "Celebrity"
+            ] 
           },
           {
             "type": "INFP",
@@ -262,6 +303,12 @@ function addData() {
               "Perceptive",
               "Caring",
               "Loyal"
+            ],
+            "roles":[
+               "Mediator",
+               "Writer",
+               "Actor",
+               "Social Worker"
             ]
           },
           {
@@ -273,6 +320,12 @@ function addData() {
               "Reserved",
               "Flexible",
               "Imaginative"
+            ],
+            "roles":[
+               "Inventor",
+               "Product Developer",
+               "Professor",
+               "Researcher"
             ]
           }
         ]
@@ -294,7 +347,13 @@ function addData() {
               "Curious",
               "Versatile",
               "Spontaneous"
-            ]
+            ],
+            "roles":[
+               "Entrepreneur",
+               "Comedian",
+               "Inventor",
+               "Public Figure"
+            ]  
           },
           {
             "type": "ESFP",
@@ -305,7 +364,13 @@ function addData() {
               "Spontaneous",
               "Tactful",
               "Flexible"
-            ]
+            ],
+            "roles":[
+               "Entertainer",
+               "Actor",
+               "Dancer",
+               "Influencer"
+            ] 
           },
           {
             "type": "ENFP",
@@ -316,7 +381,13 @@ function addData() {
               "Optimistic",
               "Supportive",
               "Playful"
-            ]
+            ],
+            "roles":[
+               "Campaigner",
+               "Negotiator",
+               "Literary Analyst",
+               "Psychologist"
+            ]              
           },
           {
             "type": "ENTP",
@@ -327,6 +398,12 @@ function addData() {
               "Enterprising",
               "Inquisitive",
               "Versatile"
+            ],
+            "roles":[
+               "Debater",
+               "Lawyer",
+               "Politician",
+               "Marketer"
             ]
           },
           {
@@ -338,6 +415,12 @@ function addData() {
               "Systematic",
               "Dependable",
               "Realistic"
+            ],
+            "roles":[
+               "Executive",
+               "Leader",
+               "Project Manager",
+               "Upholder of Law"
             ]
           },
           {
@@ -349,6 +432,12 @@ function addData() {
               "Conscientious",
               "Organized",
               "Practical"
+            ],
+            "roles":[
+               "Trend-setter",
+               "Social Outreach",
+               "Public Relations",
+               "Event Coordinator"
             ]
           },
           {
@@ -360,7 +449,13 @@ function addData() {
               "Organized",
               "Diplomatic",
               "Responsible"
-            ]
+            ],
+            "roles":[
+               "Politician",
+               "Coach",
+               "Teacher",
+               "Public Figure"
+            ] 
           },
           {
             "type": "ENTJ",
@@ -371,7 +466,13 @@ function addData() {
               "Outgoing",
               "Ambitious",
               "Independent"
-            ]
+            ],
+            "roles":[
+               "Leader",
+               "Businessperson",
+               "Chief Officer",
+               "Business Executive"
+            ] 
           }
         ]
     }

@@ -36,11 +36,24 @@ function initializePage() {
 
 		var addThese = [];
 		var whereToGo = [];
+		var increment = 330;
 
 		for (var r=0; r<user[1].length; r++) {
 			//add div class w/ append html
-			var html_add = "<div " + "id='" +user[1][r] +"' " +"style='text-align: center'" +">" 
-				+user[1][r] +"</div>";
+			var html_add = "<div " + "id='" + user[1][r] +"' " +" \
+									  style='position: absolute;\
+									  width: 200px;	\
+								      height: 36px;\
+								      left: 90px;\
+								      top:" + increment+ "px;\
+								      padding-top:10px;\
+                                      padding-left:8px;\
+								      background: #D4F5E9;\
+								      border: 1px solid #707070;\
+								      box-sizing: border-box;\
+								      text-align:center;'" 
+			               +">" +user[1][r] +"</div>";
+			increment = increment + 50;
 
 			whereToGo.push("/" +name +"/project/" +user[1][r]);
 			addThese.push(html_add);

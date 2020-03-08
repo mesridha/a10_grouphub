@@ -57,22 +57,67 @@ function initializePage() {
     var userName = user[0];
     var userPersonality = user[2];
     var [deletedTraits, notdeletedTraits] = getTraits(user);
-
+    var increment = 330;
     console.log([deletedTraits, notdeletedTraits]);
 
     //add the html for traits and roles selection
-    var htmlUser = "<h1 style='text-align: center'>Profile Page</h1>";
-    htmlUser = "<div class='users'><h2>" +userName +"</h2> \
-                        <div class='traits'><h4>Traits</h4>";
+    var htmlUser = "<div class='users'><h2\
+                     style='position: absolute;\
+                            left: 30%;\
+                            right: 58.4%;\
+                            top: 35.33%;\
+                            bottom: 55.92%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 18px;\
+                            line-height: 22px;\
+                            color: #000000;'>"
+                    +userName +"</h2> \
+                        <div class='traits'><h4\
+                        style='position: absolute;\
+                            left: 20%;\
+                            right: 58.4%;\
+                            top: 49.33%;\
+                            bottom: 55.92%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: bold;\
+                            font-size: 16px;\
+                            line-height: 22px;\
+                            color: #000000;'>Traits</h4>";
                         // for (var i in userTeams) {
                         //     htmlUser += "<h6>" +userTeams[i] + "<br></h6>";
                         // }
-            htmlUser += "</div>"; //close traits div
+    htmlUser += "</div>"; //close traits div
 
-    htmlUser += "<div class='type'><h4> Personality: " +userPersonality +"</h4>";
+    htmlUser += "<div class='type'><h4\
+                     style='position: absolute;\
+                            left: 29.87%;\
+                            right: 26.13%;\
+                            top: 43.38%;\
+                            bottom: 51.87%;\
+                            font-family: 'Sniglet Bold', arial;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 20px;\
+                            line-height: 30px;\
+                            color: #000000;'>Personality: " +userPersonality +"</h4>";
                         for (var i in notdeletedTraits) {
-                            htmlUser += "<h6 style='font-weight:bold' id='" + notdeletedTraits[i] + "' onclick=editTrait()>" + notdeletedTraits[i] + "</h6>";
-                        }
+                            htmlUser += "<h6 style='position: absolute;\
+                                                    padding-top:10px;\
+                                                    padding-left:10px;\
+                                                    width:100px;\
+                                                    height: 30px;\
+                                                    left: 60px;\
+                                                    font-weight:bold;\
+                                                    top: " + increment + "px;\
+                                                    background: #50A8B4;\
+                                                    border: 1px solid #0A47A2;\
+                                                    box-sizing: border-box;' \
+                                                    id='" + notdeletedTraits[i] + "' onclick=editTrait()>" + notdeletedTraits[i] + "</h6>";
+                            increment = increment + 40;
+                        }   
                         for (var i in deletedTraits) {
                             htmlUser += "<h6 style='font-weight:normal' id='" + deletedTraits[i] + "' onclick=editTrait()>" + deletedTraits[i] + "</h6>";
                         }

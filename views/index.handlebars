@@ -13,37 +13,141 @@
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
-
 	<div id="page_container">
-		<h1 style="text-align:center">Welcome to GroupHub</h1>
-
-		<div class="log_sign">
+			<img style="position: absolute;
+					width: 250px;
+					height: 200px;
+					left: 62px;
+					top: 10px;"
+				src="images/logo.jpeg" ... />
+			<img style="position: absolute;
+							width: 340px;
+							height: 30px;
+							left: 25px;
+							top: 200px;"
+				src="images/dots.jpeg" ... />
+			<div onclick="getElementById('log_in').style.display = 'none'; this.style.display = 'none'">
 			<div id="log_in">
-				<button id="show_log">log in</button>
-			</div>
-			<div id="sep_1">
-				<label> | </label>
+				<button id="show_log" style="position: absolute;
+											 width: 169px;
+											 height: 75px;
+											 left: 104px;
+											 top: 270px;
+
+											 background: #50A8B4;
+											 border: 1px solid #0A47A2;
+											 box-sizing: border-box;">Log In</button>
 			</div>
 			<div id="sign_up">
-				<button id="show_sign">sign up</button>
+				<button id="show_sign" style="position: absolute;
+											 width: 169px;
+											 height: 75px;
+											 left: 104px;
+											 top: 400px;
+
+											 background: #50A8B4;
+											 border: 1px solid #0A47A2;
+											 box-sizing: border-box;">Sign Up</button>
 			</div>
 		</div>
-
-		<div class="container" id="hide_me_log">
-			<hr>
+			<img style="position: absolute;
+						width: 340px;
+						height: 30px;
+						left: 19px;
+						top: 560px;"
+				src="images/dots.jpeg" ... />
+		<div class="container hide" id="hide_me_log">
 			<form method="POST" action="" id="logBtn">
-				<input type="text" id="log_username" placeholder="username">
-				<input type="text" id="log_password" placeholder="password">
-				<input type="submit" id="submitBtn logdata" class="btn btn-default" value="Enter">
+				<h5 style="position: absolute;
+					left: 9%;
+					right: 58.4%;
+					top: 45.33%;
+					bottom: 55.92%;
+
+					font-family: 'Sniglet Bold', arial;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 22px;
+
+					color: #000000;">User Name</h5>
+				<input type="text" id="log_username" placeholder="username" style="position: absolute;
+					   width: 288px;
+					   height: 36px;
+					   left: 55px;
+					   top: 320px;
+
+					   background: #D4F5E9;
+					   border: 1px solid #707070;
+					   box-sizing: border-box;">
+				<h5 style="position: absolute;
+					left: 6%;
+					right: 58.4%;
+					top: 58.33%;
+					bottom: 55.92%;
+
+					font-family: 'Sniglet Bold', arial;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 22px;
+
+					color: #000000;">Password</h5>
+				<input type="text" id="log_password" placeholder="password" style="position: absolute;
+					   width: 288px;
+					   height: 36px;
+					   left: 55px;
+					   top: 400px;
+
+					   background: #D4F5E9;
+					   border: 1px solid #707070;
+					   box-sizing: border-box;">
+				<input type="submit" id="submitBtn logdata" class="btn btn-default" value="Log In" style="position: absolute;
+					   width: 169px;
+					   height: 36px;
+					   left: 104px;
+					   top: 490px;
+
+					   background: #50A8B4;
+					   border: 1px solid #0A47A2;
+					   box-sizing: border-box;">
 			</form>
 			
 		</div>
 
 		<div class="container hide" id="hide_me_sign">
-			<hr>
 			<form method="POST" action="" id="signBtn">
-				<input type="text" id="sign_name" placeholder="preferred name">
-				<input type="submit" id="submitBtn signdata" class="btn btn-default" value="Submit">
+				<h5 style="position: absolute;
+					left: 12%;
+					right: 49.87%;
+					top: 46.33%;
+					bottom: 55.92%;
+
+					font-family: 'Sniglet Bold', arial;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 22px;
+
+					color: #000000;">Enter your name: </h5>
+				<input type="text" id="sign_name" placeholder="Preferred Name" style="position: absolute;
+					   width: 288px;
+					   height: 36px;
+					   left: 55px;
+					   top: 330px;
+
+					   background: #D4F5E9;
+					   border: 1px solid #707070;
+					   box-sizing: border-box;">
+				<input type="submit" id="submitBtn signdata" class="btn btn-default" value="Submit" style="position: absolute;
+					   width: 169px;
+					   height: 36px;
+					   left: 104px;
+					   top: 390px;
+
+					   background: #50A8B4;
+					   border: 1px solid #0A47A2;
+					   box-sizing: border-box;">
 			</form>
 			
 		</div>

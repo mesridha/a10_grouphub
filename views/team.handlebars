@@ -16,9 +16,69 @@
     </head>
     <body>
         <div id="page_container">
+            <h1 style="position: absolute;
+                       left: 18.2%;
+                       right: 15.53%;
+                       top: 0.9%;
+                       bottom: 86.36%;
 
-            <h1 style="text-align: center">{{team}}</h1>
+                       font-style: normal;
+                       font-weight: normal;
+                       font-size: 48px;
+                       line-height: 64px;
+
+                       color: #000000;">{{team}}</h1>
+            <img style="position: absolute;
+                            width: 340px;
+                            height: 30px;
+                            left: 25px;
+                            top: 100px;"
+                src="../../../images/dots.jpeg" ... />                       
             <div class="team_container">
+                <div style="position: absolute;
+                            left: 0%;
+                            right: 0%;
+                            top: 22.89%;
+                            bottom: 65.21%;
+
+                            background: #79EAFA;">
+                <h5 style="position: absolute;
+                            left: 5.87%;
+                            right: 72.8%;
+                            top: 20.39%;
+                            bottom: 75.86%;
+
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 21px;
+
+                            color: #1C2472;">Members </h5>   
+                <h5 style="position: absolute;
+                            left: 39.47%;
+                            right: 39.2%;
+                            top: 20.39%;
+                            bottom: 75.86%;
+
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 21px;
+
+                            color: #1C2472;">Traits </h5>
+                <h5 style="position: absolute;
+                            left: 74.13%;
+                            right: 4.53%;
+                            top: 20.39%;
+                            bottom: 75.86%;
+
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 21px;
+
+                            color: #1C2472;">Roles </h5>                             
+                </div>
                 
             <!-- 
                 add Jquery to load localstr 'current' teams before 
@@ -38,11 +98,21 @@
                 page load populates from traits.json in routes
                                                                 -->
 
-
                 <input type="submit" id="sumitBtn" class="btn btn-default"
-                onclick="window.location.href='/user/{{user}}/project/edit/{{team}}';" value="Edit">
+                onclick="window.location.href='/user/{{user}}/project/edit/{{team}}';" value="" style="position: absolute;
+                       width: 50px;
+                       height: 40px;
+                       left: 2px;
+                       top: 2px;
+                       background: url(../../../images/edit.jpeg);">                            
                 <input type="submit" id="sumitBtn home" class="btn btn-default"
-                onclick="window.location.href='/user';" value="Home">
+                onclick="window.location.href='/user';" value="" style="    position: absolute;
+                    width: 57px;
+                    height: 43px;
+                    left: 340px;
+                    top: 2px;
+
+                    background: url(../../../images/home.jpeg);" >
             </div>
 
         </div>

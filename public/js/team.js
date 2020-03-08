@@ -4,7 +4,7 @@
 $(document).ready(function() {
 	initializePage();
 });
-
+var inc = 33.39;
 /*
  * Function called when document is ready
  *
@@ -47,20 +47,42 @@ function initializePage() {
 	var user = JSON.parse(localStorage.getItem('current'));
 	var userName = user[0];
 	var userType = user[2];
-	var htmlUser = "<div class='users' id='" + userName + "'><h3>" + userName + "</h3>";
-	htmlUser += "<div class='types' id='" + userType + "'><h4>" + userType + "</h4></div></div>";
+	var htmlUser = "<div class='users' id='" + userName + "'><h3\
+					 style='position: absolute;\
+                            left: 5.87%;\
+                            right: 72.8%;\
+                            top: 35.39%;\
+                            bottom: 75.86%;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 18px;\
+                            line-height: 21px;\
+                            color: #1C2472;'>" + userName + "</h3>";
+	htmlUser += "<div class='types' id='" + userType + "'><h4 style='color:#FFFFFF'>" + userType + "</h4></div></div>";
 	$('.team_container').append(htmlUser);	
 
 	// add friends: search local str for 'friend'
-	var members = JSON.parse(localStorage.getItem('friends_traits'));	
+	var members = JSON.parse(localStorage.getItem('friends_traits'));
+	var increment = 52.39;	
 	for (var f=0; f<members.length;) {
 		//get member and type; (++) to skip array[name, type, name, type...]
 		var memberName = members[f];
 		var memberType = members[++f];
-		var htmlMember = "<div class='users' id='" + memberName + "'><h3>" + memberName + "</h3>";
-		htmlMember += "<div class='types' id='" + memberType + "'><h4>" + memberType + "</h4></div></div>";
+		var htmlMember = "<div class='users' id='" + memberName + "'><h3\
+					 style='position: absolute;\
+                            left: 5.87%;\
+                            right: 72.8%;\
+                            top: " + increment + "%;\
+                            bottom: 75.86%;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 18px;\
+                            line-height: 21px;\
+                            color: #1C2472;'>" + memberName + "</h3>";
+		htmlMember += "<div class='types' id='" + memberType + "'><h4 style='color:#FFFFFF'>" + memberType + "</h4></div></div>";
 		$('.team_container').append(htmlMember);	
 		f++;
+		increment = increment + 23;
 	}
 
 
@@ -127,10 +149,22 @@ function getTraits(user) {
 				// gather all the traits of this personality
 				var htmlTraits = "<div class='traits'>";
 				for (var j in traits) {
-					htmlTraits += "<h6>" + traits[j] + "<br>" + "</h6>";
+					htmlTraits += "<h6\
+					style='position: absolute;\
+                            left: 39.47%;\
+                            right: 39.2%;\
+                            top: "+ inc + "%;\
+                            bottom: 75.86%;\
+                            font-style: normal;\
+                            font-weight: normal;\
+                            font-size: 10px;\
+                            line-height: 21px;\
+                            color: #1C2472;'>" + traits[j] + "<br>" + "</h6>" ;
+                    inc = inc + 3;
 				}
 				htmlTraits += "</div>";
 				$(this).append(htmlTraits);
+				inc = inc + 3;
 			}
 		}
 
