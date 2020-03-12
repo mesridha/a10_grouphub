@@ -18,6 +18,8 @@ function initializePage() {
         if (u[1].includes(t)) {
             console.log("already chosen");
 
+            alert("You have ALREADY added " + t);
+            document.getElementById(t).style.background = "#50A8B4";
         } else {
             u[1].push(t);
             localStorage.setItem('add_index', JSON.stringify(u));
@@ -85,7 +87,7 @@ function addDisplay() {
     htmlTeams10 = htmlTeams10 + team_list[9] + "</div>";
     userTeams.push(htmlTeams10);
 
-    console.log(userTeams);
+    //console.log(userTeams);
     //append the html display
     $('.browse').append(userTeams);
 }  
@@ -109,5 +111,5 @@ function clearSignUp() {
     localStorage.setItem('new_member', JSON.stringify(member));
 
     //clear
-    localStorage.removeItem('add_index');
+    //localStorage.removeItem('add_index');
 }

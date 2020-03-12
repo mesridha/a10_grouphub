@@ -68,33 +68,28 @@ function login() {
         }
 
         //set localstorage var 'log_me_in'
-        var logData = new Object();
+        var logData = new Object(); //set values below depends on local str
         logData.username = username;
         logData.password = password;
 
-        //change href based on psuedo profiles
-        if (username != "" &&
-            password != "") {
+        //if username and password aren't empty, create random profile
+        var nameI = Math.floor(Math.random()*10);
+        var teamI = Math.floor(Math.random()*10);
+        var pI = Math.floor(Math.random()*10);
+        var load_user = create10(nameI, teamI, pI);
 
-            //if username and password aren't empty, create random profile
-            var nameI = Math.floor(Math.random()*10);
-            var teamI = Math.floor(Math.random()*10);
-            var pI = Math.floor(Math.random()*10);
-            var load_user = create10(nameI, teamI, pI);
+        //set log_me_in localstr
+        localStorage.setItem('log_me_in', JSON.stringify(load_user));
 
-            //set log_me_in localstr
-            localStorage.setItem('log_me_in', JSON.stringify(load_user));
+        /**
+          * test stored data before page load
+        */
+        var me = localStorage.getItem('log_me_in');
+        var lookup = JSON.parse(me);
+        console.log(lookup);
 
-            /**
-              * test stored data before page load
-            */
-            var me = localStorage.getItem('log_me_in');
-            var lookup = JSON.parse(me);
-            console.log(lookup);
-
-            var newURL = '/user/' +load_user[0];
-            window.location.href = newURL;
-        }
+        var newURL = '/user/' +load_user[0];
+        window.location.href = newURL;
 
     });
 
