@@ -70,10 +70,11 @@ function initializePage() {
     //add the html for traits and roles selection
     var htmlUser = "<div class='users'><h2\
                      style='position: absolute;\
-                            left: 31%;\
+                            left: 35%;\
                             right: 58.4%;\
                             top: 33.33%;\
                             bottom: 55.92%;\
+                            text-align: center;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: normal;\
@@ -83,9 +84,9 @@ function initializePage() {
                     +userName +"</h2> \
                         <div class='traits'><h4\
                         style='position: absolute;\
-                            left: 15%;\
+                            left: 16%;\
                             right: 18.4%;\
-                            top: 48.33%;\
+                            top: 46.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -94,9 +95,9 @@ function initializePage() {
                             line-height: 22px;\
                             color: #000000;'>Delete Traits</h4>\
                             <h4 style='position: absolute;\
-                            left: 64%;\
+                            left: 66%;\
                             right: 1.4%;\
-                            top: 48.33%;\
+                            top: 46.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -115,6 +116,7 @@ function initializePage() {
                             right: 26.13%;\
                             top: 40.38%;\
                             bottom: 51.87%;\
+                            text-align: center;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: normal;\

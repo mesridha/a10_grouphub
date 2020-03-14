@@ -72,7 +72,7 @@ function initializePage() {
                      style='position: absolute;\
                             left: 30%;\
                             right: 58.4%;\
-                            top: 33.33%;\
+                            top: 31.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -83,9 +83,9 @@ function initializePage() {
                     +userName +"</h2> \
                         <div class='traits'><h4\
                         style='position: absolute;\
-                            left: 15%;\
+                            left: 16%;\
                             right: 18.4%;\
-                            top: 46.33%;\
+                            top: 44.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -94,9 +94,9 @@ function initializePage() {
                             line-height: 22px;\
                             color: #000000;'>Delete Traits</h4>\
                             <h4 style='position: absolute;\
-                            left: 62%;\
+                            left: 66%;\
                             right: 1.4%;\
-                            top: 46.33%;\
+                            top: 44.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -113,7 +113,7 @@ function initializePage() {
                      style='position: absolute;\
                             left: 29.87%;\
                             right: 26.13%;\
-                            top: 41.38%;\
+                            top: 38.38%;\
                             bottom: 51.87%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
