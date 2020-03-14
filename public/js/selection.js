@@ -70,9 +70,9 @@ function initializePage() {
     //add the html for traits and roles selection
     var htmlUser = "<div class='users'><h2\
                      style='position: absolute;\
-                            left: 30%;\
+                            left: 31%;\
                             right: 58.4%;\
-                            top: 35.33%;\
+                            top: 33.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -83,9 +83,9 @@ function initializePage() {
                     +userName +"</h2> \
                         <div class='traits'><h4\
                         style='position: absolute;\
-                            left: 13%;\
+                            left: 15%;\
                             right: 18.4%;\
-                            top: 49.33%;\
+                            top: 48.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -96,7 +96,7 @@ function initializePage() {
                             <h4 style='position: absolute;\
                             left: 64%;\
                             right: 1.4%;\
-                            top: 49.33%;\
+                            top: 48.33%;\
                             bottom: 55.92%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
@@ -113,7 +113,7 @@ function initializePage() {
                      style='position: absolute;\
                             left: 29.87%;\
                             right: 26.13%;\
-                            top: 43.38%;\
+                            top: 40.38%;\
                             bottom: 51.87%;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\

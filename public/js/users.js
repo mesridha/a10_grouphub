@@ -36,7 +36,7 @@ function initializePage() {
 
 		var addThese = [];
 		var whereToGo = [];
-		var increment = 330;
+		var increment = 305;
 
 		for (var r=0; r<user[1].length; r++) {
 			//add div class w/ append html
