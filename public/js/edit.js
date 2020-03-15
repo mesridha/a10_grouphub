@@ -81,23 +81,23 @@ function initializePage() {
                     +userName +"</h2> \
                         <div class='traits'><h4\
                         style='position: absolute;\
-                            left: 60px;\
+                            left: 70px;\
                             top: 295px;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: bold;\
                             font-size: 16px;\
                             line-height: 22px;\
-                            color: #000000;'>Delete Traits</h4>\
+                            color: #000000;'>Edit Traits</h4>\
                             <h4 style='position: absolute;\
-                            left: 250px;\
+                            left: 260px;\
                             top: 295px;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: bold;\
                             font-size: 14px;\
                             line-height: 22px;\
-                            color: #000000;'>Delete Roles</h4>";
+                            color: #000000;'>Edit Roles</h4>";
                         // for (var i in userTeams) {
                         //     htmlUser += "<h6>" +userTeams[i] + "<br></h6>";
                         // }
