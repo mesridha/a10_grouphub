@@ -70,10 +70,8 @@ function initializePage() {
     //add the html for traits and roles selection
     var htmlUser = "<div class='users'><h2\
                      style='position: absolute;\
-                            left: 35%;\
-                            right: 58.4%;\
-                            top: 28.33%;\
-                            bottom: 55.92%;\
+                            left: 145px;\
+                            top: 210px;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: normal;\
@@ -83,10 +81,8 @@ function initializePage() {
                     +userName +"</h2> \
                         <div class='traits'><h4\
                         style='position: absolute;\
-                            left: 15%;\
-                            right: 18.4%;\
-                            top: 39.33%;\
-                            bottom: 55.92%;\
+                            left: 60px;\
+                            top: 295px;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: bold;\
@@ -94,10 +90,8 @@ function initializePage() {
                             line-height: 22px;\
                             color: #000000;'>Delete Traits</h4>\
                             <h4 style='position: absolute;\
-                            left: 60%;\
-                            right: 1.4%;\
-                            top: 39.33%;\
-                            bottom: 55.92%;\
+                            left: 250px;\
+                            top: 295px;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: bold;\
@@ -111,10 +105,8 @@ function initializePage() {
 
     htmlUser += "<div class='type'><h4\
                      style='position: absolute;\
-                            left: 29.87%;\
-                            right: 26.13%;\
-                            top: 34.38%;\
-                            bottom: 51.87%;\
+                            left: 140px;\
+                            top: 255px;\
                             font-family: 'Sniglet Bold', arial;\
                             font-style: normal;\
                             font-weight: normal;\
