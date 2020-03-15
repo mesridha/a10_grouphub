@@ -4,6 +4,7 @@ $(document).ready(function() {
     initializePage();
 });
 
+
 /**
  * Function to getTraits from the signup-current user 'add_index' localstr
  * given a user, returns deleted and not deleted for modification later
